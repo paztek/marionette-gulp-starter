@@ -22,7 +22,7 @@ app.on('start', function() {
     if (Backbone.history) {
         Backbone.history.start();
     }
-    return console.log('App started');
+    return console.log('App started!');
 });
 
 module.exports = app;

@@ -8,7 +8,7 @@ config = require('../config');
 gulp.task('server', function() {
     return browserSync({
         port: config.ports.server,
-        open: false,
+        open: true,
         notify: false,
         server: {
             baseDir: config.publicDir,
