@@ -1,0 +1,76 @@
+{
+  "name": "marionette-gulp-starter",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:paztek/marionette-gulp-starter.git"
+  },
+  "authors": [
+    "Matthieu Balmes <matthieu.balmes@gmail.com>"
+  ],
+  "devDependencies": {
+    "browser-sync": "~1.6.3",
+    "browserify": "^8.1.0",
+    "browserify-shim": "^3.8.2",
+    "chai": "^3.0.0",
+    "del": "^1.1.1",
+    "gulp": "~3.9.0",
+    "gulp-concat": "~2.4.1",
+    "gulp-ignore": "~1.2.1",
+    "gulp-install": "~0.2.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-jsonlint": "~0.1.0",
+    "gulp-mocha": "^2.1.2",
+    "gulp-notify": "~2.0.0",
+    "gulp-plumber": "~0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace-task": "^0.1.0",
+    "gulp-sass": "^2.0.3",
+    "gulp-shell": "^0.2.11",
+    "handlebars": "^3.0.3",
+    "hbsfy": "^2.2.1",
+    "karma": "^0.12.37",
+    "karma-browserify": "^4.2.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-sinon": "^1.0.4",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17",
+    "require-dir": "~0.1.0",
+    "run-sequence": "~1.0.1",
+    "sinon": "^1.15.4",
+    "vinyl-transform": "^1.0.0",
+    "watchify": "^2.2.1"
+  },
+  "browser": {
+    "jquery": "./bower_components/jquery/dist/jquery.js",
+    "underscore": "./bower_components/underscore/underscore.js",
+    "backbone": "./bower_components/backbone/backbone.js",
+    "marionette": "./bower_components/marionette/lib/backbone.marionette.js",
+    "bootstrap": "./bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "underscore": "_",
+    "backbone": {
+      "exports": "Backbone",
+      "depends": [
+        "jquery",
+        "underscore"
+      ]
+    },
+    "marionette": {
+      "exports": "Marionette",
+      "depends": [
+        "backbone"
+      ]
+    },
+    "bootstrap": {
+      "depends": [
+        "jquery"
+      ]
+    }
+  }
+}

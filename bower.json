@@ -1,0 +1,12 @@
+{
+  "name": "marionette-gulp-starter",
+  "authors": [
+    "Matthieu Balmes <matthieu.balmes@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "marionette": "~2.4.1",
+    "bootstrap-sass-official": "~3.3.5",
+    "fontawesome": "~4.3.0"
+  }
+}
